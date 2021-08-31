@@ -181,8 +181,6 @@ ul {
 
 /* --------------MAIN-------------- */
 
-/* временный фон */
-
 /*Overlay*/
 
 .overlay {
@@ -194,11 +192,13 @@ ul {
   background-image: url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
+
   background-size: cover;
 }
 
 .hero {
   padding: 200px 0;
+
   background-color: #c4c4c4;
 }
 
@@ -215,6 +215,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-white-color);
 }
 
@@ -235,6 +236,7 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -260,11 +262,13 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
   color: var(--title-text-color);
 }
 
 .preferences-text {
   width: 270px;
+
   color: var(--primary-text-color);
 }
 
@@ -274,6 +278,7 @@ ul {
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
+
   background-color: #f5f4fa;
 }
 
@@ -299,6 +304,7 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
   color: var(--title-text-color);
 }
 
@@ -323,6 +329,7 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
   color: var(--title-text-color);
 }
 
@@ -357,6 +364,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
   text-align: center;
   color: var(--title-text-color);
 }
@@ -367,6 +375,7 @@ ul {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
   color: var(--primary-text-color);
 }
 
@@ -385,6 +394,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
   fill: rgba(175, 177, 184, 1);
 }
 
@@ -403,6 +413,7 @@ ul {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
   color: var(--title-text-color);
 }
 
@@ -450,10 +461,6 @@ ul {
 
 /* --------------FOOTER-------------- */
 
-/*.footer .container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}*/
 .footer {
   padding: 60px 0;
 
@@ -499,6 +506,53 @@ ul {
   color: var(--primary-white-color);
 }
 
+.footer .container {
+  display: flex;
+}
+
+.social-nets {
+  margin-left: 70px;
+  margin-bottom: 100px;
+}
+.our-nets-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.our-nets-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.our-nets-item:hover,
+.our-nets-item:focus {
+  background-color: var(--accent-color);
+}
+
+.our-nets-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--primary-white-color);
+}
+
+.nets-text {
+  font-size: 14px;
+  font-weight: 700px;
+
+  color: var(--primary-white-color);
+}
+
 /* --------------Portfolio PAGE-------------- */
 
 /* ----Filter---- */
@@ -525,6 +579,7 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--title-text-color);
   cursor: pointer;
 }
@@ -548,6 +603,12 @@ ul {
   margin-top: 30px;
 }
 
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
 .projects-content {
   padding: 20px 24px;
   border-left: 1px solid rgba(238, 238, 238, 1);
@@ -569,5 +630,6 @@ ul {
 
   font-size: 16px;
   line-height: 1.87;
+
   color: var(--primary-text-color);
 }
