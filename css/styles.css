@@ -207,7 +207,6 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -224,12 +223,10 @@ ul {
   text-align: center;
   border: 1px solid transparent;
 
-  font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
   color: var(--primary-white-color);
@@ -361,7 +358,6 @@ ul {
   font-size: 16px;
   line-height: 1.19;
 
-  text-align: center;
   color: var(--title-text-color);
 }
 
@@ -370,7 +366,6 @@ ul {
 
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 
   color: var(--primary-text-color);
 }
@@ -462,6 +457,8 @@ ul {
 
 .footer {
   padding: 60px 0;
+  width: 1600px;
+  height: 252px;
 
   background-color: #2f303a;
 }
@@ -577,7 +574,6 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
