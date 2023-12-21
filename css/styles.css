@@ -98,7 +98,7 @@ margin-right: 40px;
 .logo-footer-accent {
     color: #F4F4FD;
 }
-.nav-item,
+.nav-link,
 .section-title,
 .subtitle {
     color: #2E2F42;
@@ -111,7 +111,7 @@ margin-right: 40px;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-.nav-item {
+.nav-link {
     font-size: 16px;
         line-height: 1.5;
         font-weight: 500;
@@ -119,9 +119,20 @@ margin-right: 40px;
         padding: 24px 0 24px;
         display: block;
 }
-.nav-item:hover, .nav-item:focus, .nav-item:active, .address-link
+.nav-link:hover, .nav-link:focus, .nav-link:active, .address-link
  {
     color: #404BBF;
+}
+.nav-link.active {
+    color: #404BBF;
+}
+.nav-link.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404BBF;
 }
 .address-list {
     font-style: normal;
@@ -269,6 +280,29 @@ margin-right: 24px;
     border-top: none;
         background: #FFF;
     padding: 32px 16px;
+}
+.wrapper-overlay {
+    position: relative;
+
+
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 32px;
+    background-color: #4D5AE5;
+        color: #F4F4FD;
+            font-size: 16px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+
+
 }
 .footer {
     background-color: #2E2F42;
