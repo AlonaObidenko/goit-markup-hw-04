@@ -78,6 +78,7 @@ padding: 0 15px 0 15px;
     display: flex;
     justify-content: space-between;
 }
+
 .nav-list-item:not(:last-child) {
 margin-right: 40px;
 }
@@ -90,7 +91,6 @@ margin-right: 40px;
     font-weight: 700;
     text-transform: uppercase;
     margin-right: 76px;
-
 }
 .logo-header-accent {
     color: #2E2F42;
@@ -118,13 +118,21 @@ margin-right: 40px;
         letter-spacing: 0.02em;
         padding: 24px 0 24px;
         display: block;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active, .address-link
  {
     color: #404BBF;
 }
+
 .nav-link.active {
     color: #404BBF;
+    /* position: absolute; */
+    bottom: -1px;
 }
 .nav-link.active::after {
     content: "";
@@ -133,6 +141,8 @@ margin-right: 40px;
     height: 4px;
     border-radius: 2px;
     background-color: #404BBF;
+        position: absolute;
+            bottom: 0;
 }
 .address-list {
     font-style: normal;
@@ -147,6 +157,10 @@ margin-right: 40px;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover, .address-link:focus, .address-link:active {
     color: #404BBF;
@@ -189,6 +203,9 @@ margin-right: 40px;
         margin-right: auto;
         margin-left: auto;
     
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
  .hero-btn:hover, .hero-btn:focus, .hero-btn:active {
     background-color: #404BBF; 
@@ -261,6 +278,10 @@ margin-right: 24px;
     border-radius: 50%;
     color: #F4F4FD;
     fill: currentColor;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover, .socials-link:focus {
     background-color: #404BBF;
@@ -270,6 +291,10 @@ margin-right: 24px;
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
+
+    transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
