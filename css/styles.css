@@ -119,9 +119,7 @@ margin-right: 40px;
         padding: 24px 0 24px;
         display: block;
 
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         position: relative;
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active, .address-link
@@ -222,12 +220,15 @@ margin-right: 24px;
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
 }
-.advantages-icon {
-border-radius: 4px;
-    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
-    background: #F4F4FD;
+.icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
     margin-bottom: 8px;
-
+        border: 1px solid #8E8F99;
 }
 
 .subtitle {
@@ -287,10 +288,7 @@ border-radius: 4px;
     border-radius: 50%;
     color: #F4F4FD;
     fill: currentColor;
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover, .socials-link:focus {
     background-color: #404BBF;
@@ -301,9 +299,7 @@ border-radius: 4px;
     row-gap: 48px;
     column-gap: 24px;
 
-    transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover {
@@ -349,6 +345,10 @@ border-radius: 4px;
     padding: 100px 0 100px;
 
 }
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
 .footer>.text {
     
     color: #F4F4FD;
@@ -372,9 +372,18 @@ border-radius: 4px;
         letter-spacing: 0.02em;
         width: 264px;
 }
-.footer>.container {
-    display: flex;
+.socials-text {
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 16px;
 }
+
 .footer-logo-inform {
    margin-right: 120px;
 }
+.socials-link:hover, socials-link:focus {
+    background-color: #31d0aa;
+}
+/* .socials-list {
+    gap: 16px;;
+} */
