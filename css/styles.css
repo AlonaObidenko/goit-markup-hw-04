@@ -131,7 +131,7 @@ margin-right: 40px;
 
 .nav-link.active {
     color: #404BBF;
-    /* position: absolute; */
+    
     bottom: -1px;
 }
 .nav-link.active::after {
@@ -143,6 +143,7 @@ margin-right: 40px;
     background-color: #404BBF;
         position: absolute;
             bottom: 0;
+            
 }
 .address-list {
     font-style: normal;
@@ -221,6 +222,14 @@ margin-right: 24px;
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
 }
+.advantages-icon {
+border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: #F4F4FD;
+    margin-bottom: 8px;
+
+}
+
 .subtitle {
         font-size: 20px;
         font-weight: 500;
@@ -308,6 +317,7 @@ margin-right: 24px;
 }
 .wrapper-overlay {
     position: relative;
+    overflow: hidden;
 
 
 }
@@ -326,8 +336,13 @@ margin-right: 24px;
             font-size: 16px;
             line-height: 1.5;
             letter-spacing: 0.02em;
-
-
+            transform: translateY(100%);
+            transition-property: transform;
+                transition-duration: 250ms;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover .overlay-text {
+    transform: translateY(0);
 }
 .footer {
     background-color: #2E2F42;
@@ -345,8 +360,9 @@ margin-right: 24px;
     display: inline-block;
     margin-bottom: 16px;
 }
-.text-footer {
-    color: var(--CLOUD, #F4F4FD);
+
+.text-footer, .socials-text {
+    color: #F4F4FD;
         font-family: Roboto;
         font-size: 16px;
         font-style: normal;
@@ -356,6 +372,9 @@ margin-right: 24px;
         letter-spacing: 0.02em;
         width: 264px;
 }
-.footer-socials {
-   
+.footer>.container {
+    display: flex;
+}
+.footer-logo-inform {
+   margin-right: 120px;
 }
