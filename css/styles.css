@@ -296,9 +296,12 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-link-team {
+.socials-list-team {
     gap: 24px;
 }
+/* .socials-link-team {
+    gap: 24px;
+} */
 .socials-link-team:hover, .socials-link-team:focus, .socials-link-team:active {
     background-color: #404bbf;
 }
