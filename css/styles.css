@@ -175,7 +175,7 @@ margin-right: 40px;
 .hero {
     background-color: #2E2F42;
     padding: 188px 0;
-    /* max-width: 1440рх; */
+    max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -267,7 +267,7 @@ margin-right: 24px;
 .our-team-item:first-child {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-item-bottom {
     padding: 32px 0 32px;
@@ -295,6 +295,9 @@ margin-right: 24px;
     color: #F4F4FD;
     fill: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials-link-team {
+    gap: 24px;
 }
 .socials-link-team:hover, .socials-link-team:focus, .socials-link-team:active {
     background-color: #404bbf;
