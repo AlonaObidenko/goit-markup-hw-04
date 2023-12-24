@@ -180,6 +180,7 @@ margin-right: 40px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
     
 
@@ -276,7 +277,7 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .socials-list {
     display: flex;
     gap: 16px;
-    justify-content: center;
+    
     align-items: center;
     margin-top: 8px;
 }
@@ -298,10 +299,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-list-team {
     gap: 24px;
+    justify-content: center;
 }
-/* .socials-link-team {
-    gap: 24px;
-} */
+
 .socials-link-team:hover, .socials-link-team:focus, .socials-link-team:active {
     background-color: #404bbf;
 }
