@@ -175,7 +175,7 @@ margin-right: 40px;
 .hero {
     background-color: #2E2F42;
     padding: 188px 0;
-    max-width: 1440рх;
+    /* max-width: 1440рх; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -185,7 +185,6 @@ margin-right: 40px;
 
 .hero-title {
     color: #FFFFFF;
-    color: var(--WHITE, #FFF);
         text-align: center;
         font-size: 56px;
         font-weight: 700;
@@ -210,7 +209,7 @@ margin-right: 40px;
         margin-right: auto;
         margin-left: auto;
     
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
  .hero-btn:hover, .hero-btn:focus, .hero-btn:active {
     background-color: #404BBF; 
@@ -268,6 +267,7 @@ margin-right: 24px;
 .our-team-item:first-child {
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-team-item-bottom {
     padding: 32px 0 32px;
@@ -275,7 +275,7 @@ margin-right: 24px;
 }
 .socials-list {
     display: flex;
-    gap: 24px;
+    gap: 16px;
     justify-content: center;
     align-items: center;
     margin-top: 8px;
@@ -296,8 +296,8 @@ margin-right: 24px;
     fill: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials-item>.socials-link:hover, .socials-link:focus {
-    background-color: #404BBF;
+.socials-link-team:hover, .socials-link-team:focus, .socials-link-team:active {
+    background-color: #404bbf;
 }
 .portfolio-list {
     display: flex;
@@ -387,7 +387,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-logo-inform {
    margin-right: 120px;
 }
-.socials-item>.socials-link:hover, .socials-item>.socials-link:focus, .socials-item>.socials-link:active {
+.socials-link-footer:hover, .socials-link-footer:focus, .socials-link-footer:active {
     background-color: #31d0aa;
 }
 /* .socials-list {
